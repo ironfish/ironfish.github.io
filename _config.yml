@@ -5,7 +5,7 @@ email: duncan.devore@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Work @ Typesafe, Love my Wife, Kids ...
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
-url: "http://ironfish.github.io" # the base hostname & protocol for your site
+url: "https://ironfish.github.io" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
 author: "Duncan K. DeVore"
 author_thumbnail: "/assets/images/avatar.png" # Author avatar
