@@ -71,13 +71,13 @@ While distributed systems focus on the technical details of interconnected, inde
 
 As a result, many companies have begun to rethink their value proposition. Case and point; In January of 2008 Amazon announced that Amazon Web Services now consume more bandwidth than their entire global network of retail services, as shown in this figure from [Amazon Blogs](http://aws.amazon.com/blogs/aws/lots-of-bits/):
 
-![amazon_aws](../assets/images/big_aws_bandwidth.gif)
+![amazon_aws](/img/big_aws_bandwidth.gif)
 
 What is Amazon? An online bookstore or provider of Cloud Services?
 
 This new landscape of distributed cloud computing represents a dramatic change for the modern programmer, much like the Industrial Revolution of the nineteenth century did for the Peppered moth. Recent hardware enhancement such as multi-core CPU’s and multi-socket servers provide computing capabilities that were non-existent as little as 8 years ago. The following shows the state of storage, CPU, and bandwidth compared to the number of network nodes. Notice the increase from the 70's!
 
-![storage_cpu_bandwidth](../assets/images/storage_cpu_bandwidth.png)
+![storage_cpu_bandwidth](/img/storage_cpu_bandwidth.png)
 
 As the figure from [Oreilly Radar](http://radar.oreilly.com/2011/08/building-data-startups.html) illustrates, the decrease in the cost of storage, CPU cycles, and bandwidth coupled with an increase of network nodes, means it is shaping up to be a very competitive environment. An environment the `Reactive Paradigm` is designed to meet head on because of ready distribution across this vast ocean of processing power while maintaining resilience and responsiveness.
 

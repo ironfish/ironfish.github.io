@@ -1,63 +1,58 @@
-# Site settings
-title: Typed Musings
-tagline: "random thoughts on programming and more ..."
-email: duncan.devore@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Work @ Typesafe, Love my Wife, Kids ...
-baseurl: # the subpath of your site, e.g. /blog/
-url: # the base hostname & protocol for your site
-logourl: /assets/images/logo.png # Site logo
-author: "Duncan K. DeVore"
-author_thumbnail: "/assets/images/avatar.png" # Author avatar
-# Theme customization - please change from the defaults!
+# SITE CONFIGURATION
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ironfish.github.io" # the base hostname & protocol for your site
+
+# THEME-SPECIFIC CONFIGURATION
 theme:
-  # Color for sidebar bar, links, etc
-  highlight_color: "#205081" #205081" # "#272935"
-  # Social media links, leave blank to ignore
-  social:
-    github: ironfish
-    twitter: ironfish
-#    facebook:
-#    gplus:
-#    dribble:
-#    pinterest:
+  # Meta
+  title: typed[T] musings
+  avatar: avatar.png
+  gravatar: # Email MD5 hash
+  description: "Thoughts about distribute, reactive and functional programming." # used by search engines
 
-  # Enable share buttons on post footer
-  show_share_buttons: true
+  # Header and footer text
+  #  header_text: >
+  #  header_text_feature_image:
+  footer_text: >
+   Copyright © 2014, 2015 Duncan K. DeVore. All rights reserved.
 
-  # Show author picure, name and social links on post footer
-  show_author_info: true
+  # Icons
+  rss: false
+  email_address:
+  github: ironfish
+  twitter: ironfish
+  linkedin: https://www.linkedin.com/in/duncandevore
 
-  # Disqus comments manager - shortname
-  # disqus_shortname: gaya-webcreate
+  # Share links
+  show_share: true
 
-  # Google Analytics/Webmaster key, leave blank to ignore
-  google_analytics_key:
-  google_webmaster_key:
+  # Scripts
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname: ironfish
+  katex: true # Enable if using math markup
 
-# Build settings
-markdown: kramdown
-kramdown:
-  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
-  highlighter: pygments
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Continue reading"
 
-# Permalinks
-permalink:        pretty
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
 
-# Pagination config
+  # Post navigation
+  post_navigation: true
+
+# PAGINATION
 paginate: 5
+paginate_path: "blog/page:num"
 
-# Files/Folders to be excluded from generated _site folder
-exclude:
-  - CNAME
-  - Gemfile
-  - Rakefile
-  - README.md
-  - .gitignore
-  - .sass-cache
-  - Gemfile.lock
-
-# Sass conversion configs
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: pygments
 sass:
-  sass_dir: assets/css/_sass
+  sass_dir: _sass
   style: :compressed
